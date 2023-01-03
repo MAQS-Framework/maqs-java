@@ -225,8 +225,8 @@ Primarily used with Maven implementation of MAQS.
     <!--<add key="appiumVersion" value="1.7.1"/> -->
     <!-- <add key="app" value="sauce-storage:app-name.extension"/> -->
     <add key="app" value="App_Path" />
-    <add key="appActivity" value="com.cognizantsoftvision.appiumtesting.maqsregistrydemo.LoginPage" />
-    <add key="appPackage" value="com.cognizantsoftvision.appiumtesting.maqsregistrydemo" /> 
+    <add key="appActivity" value="io.github.appiumtesting.maqsregistrydemo.LoginPage" />
+    <add key="appPackage" value="io.github.appiumtesting.maqsregistrydemo" /> 
   </AppiumCapsMaqs>
   <DatabaseMaqs>
     <!--<add key="DataBaseProviderType" value="SQLSERVER" />

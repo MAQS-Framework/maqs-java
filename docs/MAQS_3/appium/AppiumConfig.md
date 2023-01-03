@@ -145,7 +145,7 @@ AppiumConfig.setTimouts(driver);
     <add key="SavePageSourceOnFail" value="NO" />
   </AppiumMaqs>
   <AppiumCapsMaqs>
-    <add key="username" value="Partner_CognizantSoftvision" />
+    <add key="username" value="Partner_MAQS" />
     <add key="accessKey" value="7e0592a4-16de-4c6b-9b87-ee61aa43ceac" />
     <add key="deviceName" value="Android Emulator" />
     <add key="deviceOrientation" value="portrait" />

@@ -44,7 +44,7 @@
         <!--Remote browser settings-->
         <RemoteBrowser>Chrome</RemoteBrowser>
         <HubUrl>http://ondemand.saucelabs.com:80/wd/hub</HubUrl>
-        <WebSiteBase>https://cognizantopensource.github.io/maqs-dotnet-templates/Static/Automation/</WebSiteBase>
+        <WebSiteBase>https://maqs-framework.github.io/TestingSite/Automation/</WebSiteBase>
         <BrowserWaitTime>1000</BrowserWaitTime>
         <BrowserTimeout>20000</BrowserTimeout>
         <RemoteBrowserName>Chrome</RemoteBrowserName>

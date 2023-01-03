@@ -3,44 +3,44 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.cognizantsoftvision.maqs</groupId>
+    <groupId>io.github.maqs</groupId>
     <artifactId>maqs-java</artifactId>
     <version>${revision}</version>
     <name>MAQS Framework</name>
-    <description>A collection of testing libraries and convenience classes to accelerate startup
-        automation efforts
+    <description>
+        A collection of testing libraries and convenience classes to accelerate startup automation efforts
     </description>
     <packaging>pom</packaging>
-    <url>https://github.com/CognizantOpenSource/maqs-java</url>
+    <url>https://github.com/MAQS-Framework/maqs-java</url>
     <inceptionYear>2017</inceptionYear>
     <organization>
-        <name>Cognizant Softvision</name>
-        <url>https://www.cognizantsoftvision.com/</url>
+        <name>MAQS</name>
+        <url>https://maqs-framework.github.io/</url>
     </organization>
     <developers>
         <developer>
-            <organization>Cognizant Softvision</organization>
-            <organizationUrl>https://www.cognizantsoftvision.com/</organizationUrl>
+            <organization>MAQS Team</organization>
+            <organizationUrl>https://maqs-framework.github.io/</organizationUrl>
         </developer>
     </developers>
     <issueManagement>
         <system>GitHub</system>
-        <url>https://github.com/CognizantOpenSource/maqs-java/issues</url>
+        <url>https://github.com/MAQS-Framework/maqs-java/issues</url>
     </issueManagement>
     <ciManagement>
         <system>GitHub Actions</system>
-        <url>https://github.com/CognizantOpenSource/maqs-java/actions</url>
+        <url>https://github.com/MAQS-Framework/maqs-java/actions</url>
     </ciManagement>
     <licenses>
         <license>
             <name>MIT</name>
-            <url>https://github.com/CognizantOpenSource/maqs-java/blob/main/LICENSE</url>
+            <url>https://github.com/MAQS-Framework/maqs-java/blob/main/LICENSE</url>
         </license>
     </licenses>
     <scm>
-        <connection>scm:git:git://github.com/CognizantOpenSource/maqs-java.git</connection>
-        <developerConnection>scm:git:git@github.com:CognizantOpenSource/maqs-java.git</developerConnection>
-        <url>https://github.com/CognizantOpenSource/maqs-java</url>
+        <connection>scm:git:git://github.com/MAQS-Framework/maqs-java.git</connection>
+        <developerConnection>scm:git:git@github.com:MAQS-Framework/maqs-java.git</developerConnection>
+        <url>https://github.com/MAQS-Framework/maqs-java</url>
         <tag>HEAD</tag>
     </scm>
 
@@ -92,11 +92,11 @@
             <distributionManagement>
                 <repository>
                     <id>github</id>
-                    <url>https://maven.pkg.github.com/CognizantOpenSource/maqs-java</url>
+                    <url>https://maven.pkg.github.com/MAQS-Framework/maqs-java</url>
                 </repository>
                 <snapshotRepository>
                     <id>github</id>
-                    <url>https://maven.pkg.github.com/CognizantOpenSource/maqs-java</url>
+                    <url>https://maven.pkg.github.com/MAQS-Framework/maqs-java</url>
                     <uniqueVersion>true</uniqueVersion>
                 </snapshotRepository>
             </distributionManagement>
@@ -179,7 +179,7 @@
             <properties>
                 <maven.test.skip>true</maven.test.skip>
                 <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-                <sonar.organization>cognizantopensource</sonar.organization>
+                <sonar.organization>maqs-framework</sonar.organization>
             </properties>
             <build>
                 <plugins>
@@ -259,21 +259,26 @@
 
     <properties>
         <revision>3.0.1-SNAPSHOT</revision>
+        <jdk.version>11</jdk.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven-deploy-plugin.version>3.0.0-M1</maven-deploy-plugin.version>
+
+        <checkstyle.version>8.29</checkstyle.version>
         <checkstyle.plugin.version>2.17</checkstyle.plugin.version>
+        <mvncheckstyle.plugin.version>3.1.2</mvncheckstyle.plugin.version>
+        <puppycheckstyle.plugin.version>9.2.1</puppycheckstyle.plugin.version>
+
         <javadoc.plugin.version>3.3.1</javadoc.plugin.version>
         <compiler.plugin.version>3.8.1</compiler.plugin.version>
         <surefire.plugin.version>3.0.0-M6</surefire.plugin.version>
-        <mvncheckstyle.plugin.version>3.1.2</mvncheckstyle.plugin.version>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <puppycheckstyle.plugin.version>9.2.1</puppycheckstyle.plugin.version>
+
         <jacoco.version>0.8.7</jacoco.version>
         <testng.version>7.5</testng.version>
-        <selenium.version>4.1.1</selenium.version>
+
+        <selenium.version>4.7.1</selenium.version>
         <!-- TODO: delete seleniumAppium.version when appium is updated with appium java client 8.0 -->
         <seleniumAppium.version>3.141.59</seleniumAppium.version>
-        <maven-deploy-plugin.version>3.0.0-M1</maven-deploy-plugin.version>
-        <checkstyle.version>8.29</checkstyle.version>
-        <jdk.version>11</jdk.version>
+
         <chromedriver.version>94.0.4606.41</chromedriver.version>
         <geckodriver.version>0.28.0</geckodriver.version>
         <edgedriver.version>5.16299</edgedriver.version>
@@ -292,47 +297,47 @@
                 <version>${testng.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.cognizantsoftvision.maqs.accessibility</groupId>
+                <groupId>io.github.maqs.accessibility</groupId>
                 <artifactId>maqs-accessibility</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.cognizantsoftvision.maqs.appium</groupId>
+                <groupId>io.github.maqs.appium</groupId>
                 <artifactId>maqs-appium</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.cognizantsoftvision.maqs.base</groupId>
+                <groupId>io.github.maqs.base</groupId>
                 <artifactId>maqs-base</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.cognizantsoftvision.maqs.cucumber</groupId>
+                <groupId>io.github.maqs.cucumber</groupId>
                 <artifactId>maqs-cucumber</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.cognizantsoftvision.maqs.database</groupId>
+                <groupId>io.github.maqs.database</groupId>
                 <artifactId>maqs-database</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.cognizantsoftvision.maqs.selenium</groupId>
+                <groupId>io.github.maqs.selenium</groupId>
                 <artifactId>maqs-selenium</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.cognizantsoftvision.maqs.utilities</groupId>
+                <groupId>io.github.maqs.utilities</groupId>
                 <artifactId>maqs-utilities</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.cognizantsoftvision.maqs.webservices</groupId>
+                <groupId>io.github.maqs.webservices</groupId>
                 <artifactId>maqs-webservices</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.cognizantsoftvision.maqs.playwright</groupId>
+                <groupId>io.github.maqs.playwright</groupId>
                 <artifactId>maqs-playwright</artifactId>
                 <version>${project.version}</version>
             </dependency>

@@ -157,8 +157,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: [test-modules, getVersion]
     env:
-      SONAR_ORG: "cognizantopensource"
-      SONAR_PROJECT: "CognizantOpenSource_maqs-java"
+      SONAR_ORG: "MAQS"
+      SONAR_PROJECT: "MAQS_maqs-java"
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       SONAR_TOKEN: ${{secrets.SONAR_TOKEN}}
       VERSION: ${{ needs.getVersion.outputs.buildNumber }}

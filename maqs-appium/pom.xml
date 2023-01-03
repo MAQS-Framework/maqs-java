@@ -5,12 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.cognizantsoftvision.maqs</groupId>
+        <groupId>io.github.maqs</groupId>
         <artifactId>maqs-java</artifactId>
         <version>${revision}</version>
     </parent>
 
-    <groupId>com.cognizantsoftvision.maqs.appium</groupId>
+    <groupId>io.github.maqs.appium</groupId>
     <artifactId>maqs-appium</artifactId>
     <version>${revision}</version>
     <name>MAQS Appium Testing Module</name>
@@ -41,11 +41,11 @@
             <artifactId>testng</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.cognizantsoftvision.maqs.utilities</groupId>
+            <groupId>io.github.maqs.utilities</groupId>
             <artifactId>maqs-utilities</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.cognizantsoftvision.maqs.base</groupId>
+            <groupId>io.github.maqs.base</groupId>
             <artifactId>maqs-base</artifactId>
         </dependency>
         <dependency>

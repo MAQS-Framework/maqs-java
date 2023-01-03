@@ -18,9 +18,9 @@ runs:
     - name: Start MAQS test services container
       if: inputs.module-name == 'maqs-webservices'
       shell: pwsh
-      #run:  docker-compose -f docker/MAQSService/docker-compose.yml -p CognizantOpenSource/maqs-java up -d
+      #run:  docker-compose -f docker/MAQSService/docker-compose.yml -p MAQS-Framework/maqs-java up -d
       run: Start-Process -FilePath "dotnet" -ArgumentList "run --project docker/MAQSService/MainTestService/MainTestService.csproj"
     - name: Build the docker-compose stack
       if: inputs.module-name == 'maqs-database'
       shell: bash
-      run: docker-compose -f docker/MAQSSQLServer/docker-compose.yml -p CognizantOpenSource/maqs-java up -d
+      run: docker-compose -f docker/MAQSSQLServer/docker-compose.yml -p MAQS-Framework/maqs-java up -d

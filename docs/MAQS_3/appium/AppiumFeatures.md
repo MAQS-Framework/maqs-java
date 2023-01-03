@@ -51,8 +51,8 @@ Stores methods for interacting with the config.xml
 ```java
 package com.COMPANY.TESTING;
 
-import com.cognizantsoftvision.maqs.appium.BaseAppiumTest;
-import com.cognizantsoftvision.maqs.utilities.helper.TestCategories;
+import io.github.maqs.appium.BaseAppiumTest;
+import helper.io.github.maqs.utilities.TestCategories;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

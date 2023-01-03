@@ -83,7 +83,7 @@ code --install-extension vscjava.vscode-java-pack
 
 4. Login to your git-hub account  
    (if you don't have an account, use the Git Bash instructions)
-5. Type in: **CognizantOpenSource/maqs-java** and select it in the dropdown
+5. Type in: **MAQS-Framework/maqs-java** and select it in the dropdown
    ![alt text](../resources/installationImages/vsCode/GitHubMAQSLink.png)
 
 

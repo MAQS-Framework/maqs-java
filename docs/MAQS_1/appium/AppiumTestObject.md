@@ -3,10 +3,10 @@
 ## Inheritance Hierarchy
 ```java
 BaseTestObject
-    com.cognizantsoftvision.maqs.appium.AppiumTestObject
+    io.github.maqs.appium.AppiumTestObject
 ```
-Package: com.cognizantsoftvision.maqs.appium;  
-Assembly: import com.cognizantsoftvision.maqs.appium.AppiumTestObject
+Package: io.github.maqs.appium;  
+Assembly: import io.github.maqs.appium.AppiumTestObject
 
 ## Syntax
 java

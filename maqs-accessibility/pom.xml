@@ -4,36 +4,31 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.cognizantsoftvision.maqs</groupId>
+        <groupId>io.github.maqs</groupId>
         <artifactId>maqs-java</artifactId>
         <version>${revision}</version>
     </parent>
 
-    <groupId>com.cognizantsoftvision.maqs.accessibility</groupId>
+    <groupId>io.github.maqs.accessibility</groupId>
     <artifactId>maqs-accessibility</artifactId>
-    <version>${revision}</version>
     <name>MAQS Accessibility Testing Module</name>
-    <packaging>jar</packaging>
+    <version>${revision}</version>
 
     <properties>
-        <deque.axe.version>4.4.1</deque.axe.version>
+        <deque.axe.version>4.5.1</deque.axe.version>
         <apache.commons.version>1.10.0</apache.commons.version>
         <jsoup.version>1.15.3</jsoup.version>
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>com.cognizantsoftvision.maqs.selenium</groupId>
+            <groupId>io.github.maqs.selenium</groupId>
             <artifactId>maqs-selenium</artifactId>
         </dependency>
         <dependency>
             <groupId>com.deque.html.axe-core</groupId>
             <artifactId>selenium</artifactId>
             <version>${deque.axe.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.github.bonigarcia</groupId>
-            <artifactId>webdrivermanager</artifactId>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
@@ -45,18 +40,6 @@
             <artifactId>jsoup</artifactId>
             <version>${jsoup.version}</version>
             <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-remote-driver</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
         </dependency>
     </dependencies>
 </project>

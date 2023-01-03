@@ -1,10 +1,10 @@
 /*
- * Copyright 2022 (C) Cognizant SoftVision, All rights Reserved
+ * Copyright 2022 (C) MAQS, All rights Reserved
  */
 
 package stepdefs.generic;
 
-import com.cognizantsoftvision.maqs.cucumber.steps.BaseGenericStep;
+import io.github.maqs.cucumber.steps.BaseGenericStep;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

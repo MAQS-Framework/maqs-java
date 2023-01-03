@@ -1,13 +1,13 @@
-var buttons = document.getElementsByClassName("sectionbutton");
-var i;
+let buttons = document.getElementsByClassName("sectionbutton");
+let i;
 
 for (i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener("click", function () {
-    var expandoText = this.getElementsByClassName("buttonExpandoText")[0];
+    let expandoText = this.getElementsByClassName("buttonExpandoText")[0];
 
     this.classList.toggle("active");
 
-    var content = this.nextElementSibling;
+    let content = this.nextElementSibling;
     if (expandoText.innerHTML === "-") {
       content.style.maxHeight = 0;
       expandoText.innerHTML = "+";
@@ -18,10 +18,10 @@ for (i = 0; i < buttons.length; i++) {
   });
 }
 
-var thumbnail = document.getElementById("screenshotThumbnail");
-var thumbnailStyle = getComputedStyle(thumbnail);
-var modal = document.getElementById("modal");
-var modalimg = modal.getElementsByTagName("img")[0];
+let thumbnail = document.getElementById("screenshotThumbnail");
+let thumbnailStyle = getComputedStyle(thumbnail);
+let modal = document.getElementById("modal");
+let modalimg = modal.getElementsByTagName("img")[0];
 
 modal.addEventListener("click", function () {
   modal.style.display = "none";

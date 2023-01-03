@@ -84,7 +84,7 @@ String proxyAddress = PlaywrightConfig.getProxyAddress();
   </configSections>
 	<PlaywrightMaqs>
 		<!--Default base web url-->
-		<add key="WebBase" value="https://cognizantopensource.github.io/maqs-dotnet-templates/Static/Automation/" />
+		<add key="WebBase" value="https://MAQS-Framework.github.io/maqs-dotnet-templates/Static/Automation/" />
 
 		<!--Local browser settings
 		<add key="Browser" value="Chrome"/>

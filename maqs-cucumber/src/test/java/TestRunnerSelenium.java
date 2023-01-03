@@ -2,7 +2,7 @@
  * Copyright 2021 (C) Magenic, All rights Reserved
  */
 
-import com.cognizantsoftvision.maqs.cucumber.BaseSeleniumCucumber;
+import io.github.maqs.cucumber.BaseSeleniumCucumber;
 
 import io.cucumber.testng.CucumberOptions;
 

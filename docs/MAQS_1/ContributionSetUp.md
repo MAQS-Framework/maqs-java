@@ -18,7 +18,7 @@ are instructions to clone the project through either VS Code or IntelliJ.
 ## Clone MAQS with GitHub Desktop
 Download Git Desktop here: [https://desktop.github.com/](https://desktop.github.com/)
 
-1. Navigate to [https://github.com/CognizantOpenSource/maqs-java](https://github.com/CognizantOpenSource/maqs-java)
+1. Navigate to [https://github.com/MAQS-Framework/maqs-java](https://github.com/MAQS-Framework/maqs-java)
 2. Click the **Clone** button
 3. Click the **Open with GitHub Desktop** button
    ![alt text](../resources/installationImages/githubDesktop/CopyMAQS.png)

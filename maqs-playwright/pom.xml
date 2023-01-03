@@ -5,27 +5,27 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.cognizantsoftvision.maqs</groupId>
+        <groupId>io.github.maqs</groupId>
         <artifactId>maqs-java</artifactId>
         <version>${revision}</version>
     </parent>
 
-    <groupId>com.cognizantsoftvision.maqs.playwright</groupId>
+    <groupId>io.github.maqs.playwright</groupId>
     <artifactId>maqs-playwright</artifactId>
     <name>MAQS Playwright Testing Module</name>
     <version>${revision}</version>
 
     <properties>
-        <playwright.version>1.21.0</playwright.version>
+        <playwright.version>1.28.1</playwright.version>
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>com.cognizantsoftvision.maqs.base</groupId>
+            <groupId>io.github.maqs.base</groupId>
             <artifactId>maqs-base</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.cognizantsoftvision.maqs.utilities</groupId>
+            <groupId>io.github.maqs.utilities</groupId>
             <artifactId>maqs-utilities</artifactId>
         </dependency>
         <dependency>

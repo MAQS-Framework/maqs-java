@@ -33,7 +33,7 @@
     </GlobalMaqs>
     <PlaywrightMaqs>
         <!--Default base web url-->
-        <WebBase>https://cognizantopensource.github.io/maqs-dotnet-templates/Static/Automation/</WebBase>
+        <WebBase>https://maqs-framework.github.io/TestingSite/Automation/</WebBase>
 
         <!--Local browser settings
         <add key="Browser" value="Chrome"/>

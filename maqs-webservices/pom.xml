@@ -5,23 +5,24 @@
 
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.cognizantsoftvision.maqs</groupId>
+        <groupId>io.github.maqs</groupId>
         <artifactId>maqs-java</artifactId>
         <version>${revision}</version>
     </parent>
 
-    <groupId>com.cognizantsoftvision.maqs.webservices</groupId>
+    <groupId>io.github.maqs.webservices</groupId>
     <artifactId>maqs-webservices</artifactId>
     <name>MAQS WebServices Testing Module</name>
     <version>${revision}</version>
 
     <properties>
         <spring.web.version>5.3.15</spring.web.version>
+        <jackson.version>2.14.0</jackson.version>
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>com.cognizantsoftvision.maqs.base</groupId>
+            <groupId>io.github.maqs.base</groupId>
             <artifactId>maqs-base</artifactId>
         </dependency>
         <dependency>
@@ -29,28 +30,28 @@
             <artifactId>testng</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.cognizantsoftvision.maqs.utilities</groupId>
+            <groupId>io.github.maqs.utilities</groupId>
             <artifactId>maqs-utilities</artifactId>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-core</artifactId>
-            <version>2.13.2</version>
+            <version>${jackson.version}</version>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.13.4.1</version>
+            <version>${jackson.version}</version>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.dataformat</groupId>
             <artifactId>jackson-dataformat-xml</artifactId>
-            <version>2.13.2</version>
+            <version>${jackson.version}</version>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-annotations</artifactId>
-            <version>2.13.2</version>
+            <version>${jackson.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>

@@ -48,8 +48,8 @@ Stores methods for interacting with the config.xml
 ```java
 package com.COMPANY.TESTING;
 
-import com.cognizantsoftvision.maqs.playwright.BasePlaywrightTest;
-import com.cognizantsoftvision.maqs.utilities.helper.TestCategories;
+import io.github.maqs.playwright.BasePlaywrightTest;
+import helper.io.github.maqs.utilities.TestCategories;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

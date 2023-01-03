@@ -25,7 +25,7 @@ Note:  You can download it here: [https://www.jetbrains.com/idea/download/#secti
 2. Select the **Repository URL** tab
 3. For **Version control** select **Git**
 4. In the URL text box enter the maqs-java git url:  
-   https://github.com/CognizantOpenSource/maqs-java.git
+   https://github.com/MAQS-Framework/maqs-java.git
 5. Click the **Clone** button
    ![alt text](../resources/installationImages/intellij/GitSetup.png)
 
